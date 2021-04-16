@@ -1,0 +1,112 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@font-face {
+    font-family: "century";
+    src: url("/css/century.ttf");
+  }
+  
+  body {
+    font-family: century ;
+  }
+
+.century {
+    font-family: century ;
+}
+
+#map {
+    height: 100%;
+  }
+
+//////////////////////////////////////////
+.sidebar {
+    position: fixed;
+    width: 70px;
+    height: 100%;
+    transition: linear 0.2s;
+    z-index: 100000;
+    overflow: hidden;
+}
+.sidebar:hover {
+    width: 250px ;
+}
+
+
+.pls-70 {
+    padding-left: 70px !important;
+}
+
+.custom-control-label:before{
+  background-color: white ;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    
+  background-color:$primary;
+}
+
+/*.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    
+}*/
+
+/* Dashboard */
+.dash-store-panel {
+    height: 200px ;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* Dashboard */
+//////////////////////////////////////////
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    /* Dashboard */
+.dash-store-panel {
+    height: 250px ;
+}
+/* Dashboard */
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    /* Dashboard */
+.dash-store-panel {
+    height: 300px ;
+}
+/* Dashboard */
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    /* Dashboard */
+.dash-store-panel {
+    height: 300px ;
+}
+/* Dashboard */
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    /* Dashboard */
+.dash-store-panel {
+    height: 300px ;
+}
+/* Dashboard */
+ }
